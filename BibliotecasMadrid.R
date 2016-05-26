@@ -12,7 +12,7 @@ numprestamoslibros <- ddply(prestamosmayo2016, .(phbarc,tititu,tiauto), summariz
 head(numprestamoslibros)
 class(numprestamoslibros$phbarc)
 numprestamoslibros[which(numprestamoslibros$phbarc == 30282), ] #comprobación del número de frecuencia
-
+names(numprestamoslibros)
 #Diez titulos que más se han prestado
 orden <- numprestamoslibros[order(numprestamoslibros$NumSubs,decreasing = TRUE),]
 head(orden,10)
@@ -57,3 +57,35 @@ subset(numlibrosautor,grepl("Cervantes Saavedra",numlibrosautor$tiauto))
   #tiauto numlibros
 #1903 Cervantes Saavedra, Miguel de (1547-1616)        14
 #1904    Cervantes Saavedra, Miguel de1547-1616        76
+
+#Analisis Relación entre dos variables qualitativas. Ejemplo: tipo de lector con tipo de ejemplar 
+  
+observaciones <- nrow(prestamosmayo2016)
+observaciones
+
+#PAra cada tipo de lector cual es el tipo de lectura más prestado
+#phcolp y phcocp
+
+lectortipo <- ddply(prestamosmayo2016,.(phcolp,phcocp),summarize,numlectores=sum(length((phcocp))))
+lectortipo
+sum(lectortipo$numlectores)#nos da el numero de filas de la base de datos 111453
+unique(prestamosmayo2016$phcolp)#ævemos los niveles que tenía el fichero original
+
+#pongo una de las variables como nombre de columna, el tipo de lector
+tablatipousuarios <- dcast(lectortipo,value.var= "numlectores",phcocp ~ phcolp)
+
+# elimino los NA
+
+tablatipousuarios[is.na(tablatipousuarios)] <- 0
+tablatipousuarios
+
+#Porcentaje préstamo libros infantiles sobre el total
+
+librosinfantiles <- ddply(prestamosmayo2016,.(phadul),summarize,numerousuarios=sum(length(phadul)))
+
+librosinfantiles$porcentaje <- librosinfantiles$numerousuarios/sum(librosinfantiles$numerousuarios)
+
+sum(librosinfantiles$numerousuarios)
+
+
+dat.preds <- ddply(lectortipo, .(numlectores), transform, pred = predict(lm( numlectores ~ phcolp+phcocp)))
