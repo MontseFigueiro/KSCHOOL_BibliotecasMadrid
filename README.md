@@ -1,126 +1,130 @@
-##PrÈstamos Bibliotecas Madrid
-#DESCRIPCI”N CAMPOS PRINCIPALES FICHEROS DE PR…STAMO ACTIVOS
-¨¨¨¨¨¨¨¨¨
+##Pr√©stamos Bibliotecas Madrid
+#DESCRIPCI√ìN CAMPOS PRINCIPALES FICHEROS DE PR√âSTAMO ACTIVOS
+¬¨¬¨¬¨¬¨¬¨¬¨¬¨¬¨¬¨
 
-Contiene solamente los prÈstamos activos, es decir, aquellos que est·n asociados a lectores por no haber sido devueltos todavÌa.  
-
-
-Columna 	DescripciÛn 						Tipo/TamaÒo
-prbarc 	CÛdigo de barras del ejemplar 				NumÈrico 10
-prprsu 	CÛdigo de sucursal del prÈstamo(1) 			AlfanumÈrico 6
-prcolp 	CÛdigo de tipo de lector (2)  				AlfanumÈrico 3
-prcocp 	CÛdigo de tipo de ejemplar (3)  				AlfanumÈrico 3
-prlebi 		Biblioteca del lector 					AlfanumÈrico 6
-prlesu 	Sucursal del lector 	(4)  					AlfanumÈrico 6
-pradul 	Adulto / No adulto (1 / 0) (5)  				NumÈrico 1
-prfpre 		Fecha del prÈstamo (6)  					Fecha/Hora 24
-prcocs 	Soporte (7)  							AlfanumÈrico 3
-tititu		TÌtulo del libro (8) 						AlfanumÈrico 60
-tiauto		Autor								AlfanumÈrico
+Contiene solamente los pr√©stamos activos, es decir, aquellos que est√°n asociados a lectores por no haber sido devueltos todav√≠a.  
 
 
-
-(1) CÛdigo de sucursal del prÈstamo:
-Biblioteca	DescripciÛn
-HM    	Hemeroteca Municipal de Madrid
-BHM   	Biblioteca HistÛrica Municipal de Madrid
-BMM   	Biblioteca Musical del Ayuntamiento de Madrid
-BTM   	Biblioteca TÈcnica Municipal de Madrid
-BPM   	Bibliotecas P˙blicas Municipales de Madrid
-MM    	Museo de Historia
-ARV   	Archivo de Villa
-IMP   	Biblioteca Imprenta Municipal
-BPME  	ExtensiÛn bibliotecaria
-
-
-(2)	CÛdigo de tipo de lector:
-CÛdigo	DescripciÛn
-COL  	Usuario colectivo
-AYU  	Personal del Ayuntamiento
-INT  	Personal Interno
-INV  	Investigador
-GIN  	Grupo de InvestigaciÛn
-USI  	Instituciones, empresas
-USU  	Usuario
-CLU  	Club de lectura
+Columna |	Descripci√≥n 		|				Tipo/Tama√±o
+--------|---------------|-----------------
+prbarc |	C√≥digo de barras del ejemplar |				Num√©rico 10
+prprsu |	C√≥digo de sucursal del pr√©stamo(1) 	|		Alfanum√©rico 6
+prcolp |	C√≥digo de tipo de lector (2)  	|			Alfanum√©rico 3
+prcocp |	C√≥digo de tipo de ejemplar (3)  		|		Alfanum√©rico 3
+prlebi |		Biblioteca del lector 		|			Alfanum√©rico 6
+prlesu |	Sucursal del lector 	(4)  |					Alfanum√©rico 6
+pradul |	Adulto / No adulto (1 / 0) (5) | 				Num√©rico 1
+prfpre 	|	Fecha del pr√©stamo (6)  	|				Fecha/Hora 24
+prcocs |	Soporte (7)  			|				Alfanum√©rico 3
+tititu	|	T√≠tulo del libro (8) |						Alfanum√©rico 60
+tiauto		|Autor			|					Alfanum√©rico
 
 
-(3)	CÛdigo de tipo de ejemplar:
 
-CÛdigo	DescripciÛn
-MB   	MonografÌa BPM
-OA   	M˙sica y multimedia
-MA   	MonografÌas y Partituras
+**(1) C√≥digo de sucursal del pr√©stamo:**
+Biblioteca|	Descripci√≥n
+----------|------------
+HM  |  	Hemeroteca Municipal de Madrid
+BHM |  	Biblioteca Hist√≥rica Municipal de Madrid
+BMM  | 	Biblioteca Musical del Ayuntamiento de Madrid
+BTM  | 	Biblioteca T√©cnica Municipal de Madrid
+BPM  | 	Bibliotecas P√∫blicas Municipales de Madrid
+MM   | 	Museo de Historia
+ARV  | 	Archivo de Villa
+IMP  | 	Biblioteca Imprenta Municipal
+BPME | 	Extensi√≥n bibliotecaria
+
+
+**(2)	C√≥digo de tipo de lector:**
+C√≥digo |	Descripci√≥n
+-------1------------
+COL | 	Usuario colectivo
+AYU | 	Personal del Ayuntamiento
+INT | 	Personal Interno
+INV  |	Investigador
+GIN | 	Grupo de Investigaci√≥n
+USI | 	Instituciones, empresas
+USU | 	Usuario
+CLU | 	Club de lectura
+
+
+**(3)	C√≥digo de tipo de ejemplar:**
+
+C√≥digo |	Descripci√≥n
+-------|------------
+MB |  	Monograf√≠a BPM
+OA   	M√∫sica y multimedia
+MA   	Monograf√≠as y Partituras
 ZA   	Tridimensional prestable
-MO   	MonografÌas
+MO   	Monograf√≠as
 QA   	Partitura
-MT   	MonografÌas
+MT   	Monograf√≠as
 HA   	Microforma prestable
-MU   	MonografÌas
+MU   	Monograf√≠as
 NP   	No prestable
 LU   	Lupas
 AU   	Dispositivos de audio
 RA   	Revistas
-MR   	MonografÌa Bibliored
-MOA  	MonografÌa de Archivo de Villa
-MM   	MonografÌas Bibliometro
-LE   	Lector de Libro ElectrÛnico
-MN   	MonografÌa Nueva Bibliometro
+MR   	Monograf√≠a Bibliored
+MOA  	Monograf√≠a de Archivo de Villa
+MM   	Monograf√≠as Bibliometro
+LE   	Lector de Libro Electr√≥nico
+MN   	Monograf√≠a Nueva Bibliometro
 AUI  	Audiovisuales Imprenta Municipal
-MI   	MonografÌas Imprenta Municipal
+MI   	Monograf√≠as Imprenta Municipal
 
 
 (4) Sucursal 
 
-Biblioteca	Sucursal	DescripciÛn
+Biblioteca	Sucursal	Descripci√≥n
 BPM   	BC    	BPM Otros
 BPM   	BCDIN 	BPM Buenavista
 BPM   	BCDIS 	BPM Ciudad Lineal
 BPM   	BCDIG 	BPM Gloria Fuertes
-BHM   	BHM   	Biblioteca HistÛrica
+BHM   	BHM   	Biblioteca Hist√≥rica
 HM    	HM    	Hemeroteca
-BMM   	BMM   	Biblioteca VÌctor EspinÛs (Musical)
+BMM   	BMM   	Biblioteca V√≠ctor Espin√≥s (Musical)
 BPM   	BCDII 	BPM Orcasur
-BPM   	BCDIT 	BPM MarÌa Zambrano
-BPM   	BPM   	Bibliotecas P˙blicas Municipales de Madrid
+BPM   	BCDIT 	BPM Mar√≠a Zambrano
+BPM   	BPM   	Bibliotecas P√∫blicas Municipales de Madrid
 MM    	MM    	Museo de Historia
 BPM   	BCDICL	BPM Club de Lectura
-BPM   	BCDI5 	BPM Eugenio TrÌas
+BPM   	BCDI5 	BPM Eugenio Tr√≠as
 BPM   	BCDI6 	BPM Biblioteca 6
 BPM   	BCDI7 	BPM Biblioteca 7
 BPM   	BCDID6	BPM Despachos
 BPM   	BCDIK 	BPM Aluche
 BPM   	BCDIC 	BPM Canillejas
 BPM   	BCDIX 	BPM Conde Duque
-BPM   	BCDIF 	BPM ChamartÌn
-BPM   	BCDIZ 	BPM D·maso Alonso
+BPM   	BCDIF 	BPM Chamart√≠n
+BPM   	BCDIZ 	BPM D√°maso Alonso
 BPM   	BCDIP 	BPM Francisco Ayala
 BPM   	BCDIA 	BPM Huerta de la Salud
 BPM   	BCDID 	BPM Islas Filipinas
-BPM   	BCDIB 	BPM Ana M™ Matute
+BPM   	BCDIB 	BPM Ana M¬™ Matute
 BPM   	BCDIM 	BPM La Chata
-BPM   	BCDIR 	BPM JosÈ Saramago
+BPM   	BCDIR 	BPM Jos√© Saramago
 BPM   	BCDIH 	BPM Miguel Delibes
-BPM   	BCDIU 	BPM PÌo Baroja
-BPM   	BCDIQ 	BPM Pozo TÌo Raimundo
+BPM   	BCDIU 	BPM P√≠o Baroja
+BPM   	BCDIQ 	BPM Pozo T√≠o Raimundo
 BPM   	BCDIY 	BPM Gerardo Diego
-BPM   	BCDIE 	BPM Vic·lvaro
+BPM   	BCDIE 	BPM Vic√°lvaro
 BPM   	BCDI8 	BPM Biblioteca 8
-BPM   	BCDI3 	BPM ¡ngel Gonz·lez
+BPM   	BCDI3 	BPM √Ångel Gonz√°lez
 BPM   	BCDI4 	BPM Ivan de Vargas
 BPME  	BRED  	Bibliored
-BPM   	BCRELI	BPM Recursos en LÌnea
+BPM   	BCRELI	BPM Recursos en L√≠nea
 IMP   	IMP   	Imprenta Municipal
 ARV   	ARV   	Archivo de Villa
 BPM   	BCDIL 	BPM Pablo Neruda
 BPM   	BCDIJ 	BPM Portazgo
 BPM   	BCDIO 	BPM San Blas
 BPM   	BCDIV 	BPM Vallecas
-BPM   	BCDI2 	BPM V·zquez Montalb·n
+BPM   	BCDI2 	BPM V√°zquez Montalb√°n
 BPME  	BMETRO	Bibliometro
-BTM   	BTM   	Biblioteca TÈcnica
-BPM   	BCDIW 	BPM JosÈ Hierro
-BPM   	BCDEPO	BPM DepÛsito General BB.PP.
+BTM   	BTM   	Biblioteca T√©cnica
+BPM   	BCDIW 	BPM Jos√© Hierro
+BPM   	BCDEPO	BPM Dep√≥sito General BB.PP.
 
 
 (5)  Adulto / No adulto 
@@ -128,37 +132,37 @@ BPM   	BCDEPO	BPM DepÛsito General BB.PP.
 ???	'1' es adulto
 
 
-(6)  Fecha de prÈstamo del ejemplar
+(6)  Fecha de pr√©stamo del ejemplar
 ???	Formato YYYY-MM-DD HH:MM:SS
 
 
 (7) Soporte 
-CÛdigo	DescripciÛn
+C√≥digo	Descripci√≥n
 Z    	OBJETOS TRIDIMENSIONALES
 S    	SONOROS
 Q    	PARTITURAS
 C    	ARCHIVO DE ORDENADOR
 H    	MICROFORMA
-V    	VÕDEO
+V    	V√çDEO
 T    	TEXTO MONOGRAFIAS
-P    	TEXTO PERI”DICAS
+P    	TEXTO PERI√ìDICAS
 
 
 (8) tititu
  
-Esta columna indica el nombre del libro o ejemplar. Por motivos tÈcnicos, solo aparecen los primeros 60 caractÈres del mismo. Como indicamos m·s abajo, con el primer campo, el cÛdigo de barras, puede acceder al cat·logo para obtener el nombre completo, y toda su informaciÛn asociada.
+Esta columna indica el nombre del libro o ejemplar. Por motivos t√©cnicos, solo aparecen los primeros 60 caract√©res del mismo. Como indicamos m√°s abajo, con el primer campo, el c√≥digo de barras, puede acceder al cat√°logo para obtener el nombre completo, y toda su informaci√≥n asociada.
  
-COMO RELACIONAR LA INFORMACI”N DE  PR…STAMOS ACTIVOS CON EL CAT¡LOGO DE BIBLIOTECAS MUNICIPALES
+COMO RELACIONAR LA INFORMACI√ìN DE  PR√âSTAMOS ACTIVOS CON EL CAT√ÅLOGO DE BIBLIOTECAS MUNICIPALES
 
 
-El primer campo del fichero de prÈstamos activos, corresponde con el cÛdigo de barras del mismo. 
+El primer campo del fichero de pr√©stamos activos, corresponde con el c√≥digo de barras del mismo. 
 
-Con ese cÛdigo, se puede obtener toda la informaciÛn asociada, en otro conjunto de datos que es el Cat·logo de bibliotecas municipales, tambiÈn disponible en el portal de datos abiertos. 
+Con ese c√≥digo, se puede obtener toda la informaci√≥n asociada, en otro conjunto de datos que es el Cat√°logo de bibliotecas municipales, tambi√©n disponible en el portal de datos abiertos. 
 
-???	A continuaciÛn, se desarrolla un caso a modo de ejemplo:
+???	A continuaci√≥n, se desarrolla un caso a modo de ejemplo:
 
-Por ejemplo, para este ejemplar que se ha prestado y tiene la siguiente informaciÛn: (dataset de prÈstamos activos)
+Por ejemplo, para este ejemplar que se ha prestado y tiene la siguiente informaci√≥n: (dataset de pr√©stamos activos)
 
 101482046	BMM   		MA   				05/05/2014	Q
 
-Con este n˙mero "101482046", podemos relacionarlo con el catalogo y obtendrÌamos el registro con toda su informaciÛn. Este primer campo es el cÛdigo de barras del ejemplar. (dataset catalogo). Se marca en verde el campo en la informaciÛn total del cat·logo para este ejemplar:
+Con este n√∫mero "101482046", podemos relacionarlo con el catalogo y obtendr√≠amos el registro con toda su informaci√≥n. Este primer campo es el c√≥digo de barras del ejemplar. (dataset catalogo). Se marca en verde el campo en la informaci√≥n total del cat√°logo para este ejemplar:
