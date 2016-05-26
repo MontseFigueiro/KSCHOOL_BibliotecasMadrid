@@ -1,9 +1,7 @@
 ##Préstamos Bibliotecas Madrid
 #DESCRIPCIÓN CAMPOS PRINCIPALES FICHEROS DE PRÉSTAMO ACTIVOS
-¬¬¬¬¬¬¬¬¬
 
 Contiene solamente los préstamos activos, es decir, aquellos que están asociados a lectores por no haber sido devueltos todavía.  
-
 
 Columna |	Descripción 		|				Tipo/Tamaño
 --------|---------------|-----------------
@@ -22,8 +20,9 @@ tiauto		|Autor			|					Alfanumérico
 
 
 **(1) Código de sucursal del préstamo:**
-Biblioteca|	Descripción
-----------|------------
+
+Biblioteca |	Descripción
+-----------|------------
 HM  |  	Hemeroteca Municipal de Madrid
 BHM |  	Biblioteca Histórica Municipal de Madrid
 BMM  | 	Biblioteca Musical del Ayuntamiento de Madrid
