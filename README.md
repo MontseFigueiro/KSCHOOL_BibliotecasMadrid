@@ -35,8 +35,9 @@ BPME | 	Extensión bibliotecaria
 
 
 **(2)	Código de tipo de lector:**
+
 Código |	Descripción
--------1------------
+-------|------------
 COL | 	Usuario colectivo
 AYU | 	Personal del Ayuntamiento
 INT | 	Personal Interno
@@ -52,35 +53,36 @@ CLU | 	Club de lectura
 Código |	Descripción
 -------|------------
 MB |  	Monografía BPM
-OA   	Música y multimedia
-MA   	Monografías y Partituras
-ZA   	Tridimensional prestable
-MO   	Monografías
-QA   	Partitura
-MT   	Monografías
-HA   	Microforma prestable
-MU   	Monografías
-NP   	No prestable
-LU   	Lupas
-AU   	Dispositivos de audio
-RA   	Revistas
-MR   	Monografía Bibliored
-MOA  	Monografía de Archivo de Villa
-MM   	Monografías Bibliometro
-LE   	Lector de Libro Electrónico
-MN   	Monografía Nueva Bibliometro
-AUI  	Audiovisuales Imprenta Municipal
-MI   	Monografías Imprenta Municipal
+OA |  	Música y multimedia
+MA  | 	Monografías y Partituras
+ZA   |	Tridimensional prestable
+MO   |	Monografías
+QA   |	Partitura
+MT   |	Monografías
+HA   |	Microforma prestable
+MU   |	Monografías
+NP   |	No prestable
+LU   |	Lupas
+AU   |	Dispositivos de audio
+RA   |	Revistas
+MR   |	Monografía Bibliored
+MOA  |	Monografía de Archivo de Villa
+MM   |	Monografías Bibliometro
+LE   |	Lector de Libro Electrónico
+MN   |	Monografía Nueva Bibliometro
+AUI  |	Audiovisuales Imprenta Municipal
+MI   |	Monografías Imprenta Municipal
 
 
 (4) Sucursal 
 
-Biblioteca	Sucursal	Descripción
-BPM   	BC    	BPM Otros
-BPM   	BCDIN 	BPM Buenavista
-BPM   	BCDIS 	BPM Ciudad Lineal
-BPM   	BCDIG 	BPM Gloria Fuertes
-BHM   	BHM   	Biblioteca Histórica
+Biblioteca |	Sucursal |	Descripción
+-----------|----------|------------
+BPM  | 	BC  |  	BPM Otros
+BPM  | 	BCDIN |	BPM Buenavista
+BPM  | 	BCDIS |	BPM Ciudad Lineal
+BPM  | 	BCDIG |	BPM Gloria Fuertes
+BHM  | 	BHM   	Biblioteca Histórica
 HM    	HM    	Hemeroteca
 BMM   	BMM   	Biblioteca Víctor Espinós (Musical)
 BPM   	BCDII 	BPM Orcasur
